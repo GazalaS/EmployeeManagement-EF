@@ -1,0 +1,12 @@
+You will need to install the following packages from NuGet:
+
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools 
+Afted that run the following command in the Package Manager Console: (Tools>Nuget Package Manager>Package Manager Console)
+
+--Used this one
+Scaffold-DbContext "Server=.\SQLExpress;Database=EmployeeDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+--Example had this one
+PM> Scaffold-DbContext "Server=.\LOCAL_SERVER;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;Database=YOUR_DATABASE;Trusted_Connection=False;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
